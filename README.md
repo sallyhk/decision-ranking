@@ -8,7 +8,7 @@ For example, "option B is more preferred to option A" is liken to "page A refere
 
 # Getting Started 
 First, open the terminal and `cd` into the directory where you would like to download this program.
-Then, clone the decision-app repository
+Then, clone the decision-ranking repository
 ```
 git clone https://github.com/sallyhk/decision-ranking.git
 ```
