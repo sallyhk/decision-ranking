@@ -25,7 +25,11 @@ The below is an example of the app for deciding what to have for dinner...
 
 Sushi tonight!
 
-# Algorithm
+# Behind the Scene
+Libraries used:
+`random`, `numpy`, `collections`
+
+## Algorithm
 Leverages page ranking algorithm, using a custom function named `decision_rank`.
 
 1. Randomly sort user's input of _n_ decisions to make. This new ordering persists throughout the program.
@@ -35,10 +39,6 @@ Leverages page ranking algorithm, using a custom function named `decision_rank`.
 5. Update the matrix by adding 1 to row _i_ and column _j_ where _i_ is the index of the unchosen decision and _j_ that of the chosen.
 6. Repeat Step 3 - 5 until the vector of weights no longer have equal weights.
 7. Order the decisions based on their final weights - the greater the weights, the higher the ranking.
-
-# Behind the Scene
-Libraries used:
-`random`, `numpy`, `collections`
 
 ## Potential Enhancements
 * nicer GUI
