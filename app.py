@@ -17,10 +17,10 @@ while fn.check_if_tie(weights):
     idx1, idx2 = fn.get_tie_indices(weights)
 
     # Ask user to pick
-    print("Please pick Option A or B: ")
-    print(f"Option A: {user_list[idx1]}")
-    print(f"Option B: {user_list[idx2]}")
-    picked = input().capitalize()
+    print("\n")
+    print(f"A: {user_list[idx1]}")
+    print(f"B: {user_list[idx2]}")
+    picked = input("Please pick one: ").capitalize()
 
     if picked.capitalize() == "A":
         idx_p = idx1
@@ -40,3 +40,4 @@ final = fn.return_ranked_list(user_list, weights)
 print("\nYour ranking:")
 for i in range(len(final)):
     print(f"{i+1}. {final[i]}")
+print("\n")
